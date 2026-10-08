@@ -16,6 +16,7 @@ app.use(express.json());
 
 // Define a test GET endpoint
 app.get("/api/status", (req, res) => {
+  print(atlele);
   const startedAt = performance.now();
   res.once("finish", () => {
     void sendLog({
